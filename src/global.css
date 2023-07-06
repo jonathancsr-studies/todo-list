@@ -16,11 +16,11 @@
 
   --danger: #E25858;
 }
-/*
+
 :focus {
   outline: transparent;
-  box-shadow: 0 0 0 2px var(--green-500 );
-} */
+  box-shadow: 0 0 0 2px var(--primary-500 );
+}
 
 * {
   margin: 0;
@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: var(--gray-900);
+  background-color: var(--gray-500);
   color: var(--gray-300);
   -webkit-font-smoothing: antialiased;
 }
