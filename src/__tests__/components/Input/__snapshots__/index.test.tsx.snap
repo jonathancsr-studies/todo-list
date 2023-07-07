@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Testing Input > should be render text input successfully 1`] = `
+<div>
+  <input
+    name="text-input"
+    placeholder="Escreva aqui"
+    type="text"
+  />
+</div>
+`;
