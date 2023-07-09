@@ -1,0 +1,23 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 46rem;
+  min-height: 4.5rem;
+  margin-top: 0.75rem;
+  padding: 1rem;
+  background-color: var(--gray-400);
+
+  color: var(--gray-100);
+  font-size: 0.875rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.checkedText {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}

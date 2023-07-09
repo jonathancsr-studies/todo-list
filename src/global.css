@@ -35,7 +35,7 @@ body {
 }
 
 body, input, textarea, button {
-  font-family: 'Quicksand', sans-serif;
+  font-family: Inter, 'Quicksand', sans-serif;
   font-weight: 400;
   line-height: 140%;
   font-size: 1rem;

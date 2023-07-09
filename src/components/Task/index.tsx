@@ -1,4 +1,7 @@
+import { useState } from "react";
+import styles from "./styles.module.css";
 export interface Task {
+  id: string;
   name: string;
 }
 
@@ -7,15 +10,17 @@ interface TaskProps {
 }
 
 export function Task({ task }: TaskProps) {
+  const [check, setCheck] = useState(false);
+
+  function handleCheckTask() {
+    setCheck(!check);
+  }
+
   return (
-    <span
-      style={{
-        margin: "0.25rem 0",
-        padding: "1rem",
-        backgroundColor: "#f5f5f5",
-      }}
-    >
-      {task.name}
-    </span>
+    <button onClick={handleCheckTask} className={styles.task}>
+      <span>{check && "feito"}</span>
+      <p className={check ? styles.checkedText : ""}>{task.name}</p>
+      <span>Trash</span>
+    </button>
   );
 }
