@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { v4 } from "uuid";
-import { Input, Task, TaskContainer } from "../components";
+import { Input, Task, TaskContainer } from "../../components";
+import styles from "./styles.module.css";
+
 export function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
 
@@ -11,25 +13,18 @@ export function Home() {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <form action="" onSubmit={handleAddNewTask}>
-        <div>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <form className={styles.form} action="" onSubmit={handleAddNewTask}>
           <Input
             type="text"
             name="new-task"
             placeholder="Adicione uma nova tarefa"
           />
           <button>Criar</button>
-        </div>
-      </form>
-      <TaskContainer tasks={tasks} />
+        </form>
+        <TaskContainer tasks={tasks} />
+      </div>
     </div>
   );
 }

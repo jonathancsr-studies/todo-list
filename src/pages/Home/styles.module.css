@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 46rem;
+}
+
+.form {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+
+  margin-top: calc(-2rem / 2);
+}
+
+.form input {
+  flex: 1;
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 1.25rem;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--primary-500);
+
+  color: var(--gray-100);
+}
