@@ -1,0 +1,10 @@
+.checkbox {
+  visibility: hidden;
+
+  background: red;
+  border-radius: 100px;
+  /* background: var(--gray-700); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
